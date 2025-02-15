@@ -14,9 +14,15 @@ System.out.println("FACTORIAL OF A GIVEN NUMBER IS: " +factorial(n));
 }
 static int factorial(int n)
 {
+if (n==0 || n==1){
+  return 1;
 
-
-//Start your Code Here
-
+} else{
+  return n*factorial(n-1);
 }
 }
+}
+
+
+
+
